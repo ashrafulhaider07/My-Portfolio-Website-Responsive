@@ -10,6 +10,11 @@
     <title>My Portfolio</title>
 </head>
 <body>
+    <!-- preloader -->
+    <div id="preloader"></div>
+
+
+
     <!-- header design -->
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
@@ -31,7 +36,7 @@
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Ashraful Haider</h1>
-            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nemo aliquam ad at! Deserunt delectus vel facere!</p>
             <div class="social-media">
                 <a href="https://www.facebook.com/dewan.ashrafulhaider" target="_blank"><i class='bx bxl-facebook' ></i></a>
@@ -176,6 +181,7 @@
 
 
 
+
     <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
@@ -186,5 +192,46 @@
             <a href="#home"><i class='bx bx-chevrons-up'></i></a>
         </div>
     </footer>
+
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <!-- custom js link -->
+    <script src="index.js"></script>
+
+
+    <!-- typed js animation link-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- //============== typed js animation ===========> -->
+    <script>
+    var typed = new Typed('.multiple-text', {
+    strings: ['Frontend Developer', 'Graphics Designer', 'Web Designer'],
+    typeSpeed: 70,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true
+    });
+    </script>
+
+
+
+    
+    <!-- preloader -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        });
+    </script>
+
+    <!-- <script>
+        $(window).on("load", function(){
+            $("#preloader").fadeOut("slow");
+        });
+    </script> -->
 </body>
 </html>
