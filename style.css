@@ -16,7 +16,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #00ffbf;
+    --main-color: #00c8ff;
 }
 
 
@@ -93,12 +93,14 @@ section{
 
 .home{
     display: flex;
+    gap: 5rem;
     justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .home-img img{
-    width: 35vw;
+    width: 32vw;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -107,7 +109,7 @@ section{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(-2.4rem);
+        transform: translateY(-2.5rem);
     }
     100%{
         transform: translateY(0);
@@ -185,12 +187,12 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 10rem;
     background: var(--second-bg-color);
 }
 
 .about-img img{
-    width: 35vw;
+    width: 30vw;
 }
 
 .heading{
@@ -516,7 +518,7 @@ span{
     }
 
     .home-img img{
-        width: 70vw;
+        width: 68vw;
         margin-top: 4rem;
     }
 
